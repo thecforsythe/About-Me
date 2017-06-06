@@ -67,22 +67,27 @@ consoleQuestionNumber = consoleQuestionNumber + 1;
 
 //Question 5
 var guessCount = 0;
+//Guess count idea fount at: https://stackoverflow.com/questions/12691691/count-the-number-of-times-an-input-has-been-made-javascript
+
 var question5 = prompt ('True or False, Chuck wants to work for you?').toUpperCase();
 if(question5 === 'TRUE') {
   alert('You got that darn right!');
   console.log('Question ' + consoleQuestionNumber + ' Correct. Work');
   score = score + 1;
 } else {
+//Thanks for the help Keith and Benjamin
   do{
     question5 = prompt('Try again....').toUpperCase();
     guessCount += 1;
   } while (question5 !== 'TRUE');
   console.log('Question ' + consoleQuestionNumber + ' Wrong. Work');
   console.log('Guess Count: ' + guessCount);
+  score = score + 1;
 }
-console.log('Guess Count2: ' + guessCount);
-alert('Ok');
-confirm('Chuck is seeking opportunities to combine his artistic tallents with practical knowledge to give users an enriching and problem free user experience. Your score is ' + score + '.');
+if(guessCount > 1) {
+  alert('Right!!!!!');
+}
+confirm('Chuck is seeking opportunities to combine his artistic talents with practical knowledge to give users an enriching and problem free user experience. Your score is ' + score + '.');
 console.log('Total score is: ' + score);
 consoleQuestionNumber = consoleQuestionNumber + 1;
 
@@ -90,12 +95,11 @@ consoleQuestionNumber = consoleQuestionNumber + 1;
 if(score === 5) {
   alert('You got a perfect score, You must really know Chuck well!');
   console.log(userName + ' is a savant!');
-} else if(score === 0){
+} else if(score === 1){
   alert('You did\'t get one question correct! You really should get to know me better!');
   console.log(userName + ' is a moron');
 } else {
   alert(score + ' out of 5. Not too bad for a beginner.');
   console.log(userName + ' is OK');
 }
-
 confirm('Thanks for playing the game ' + userName + '.');
