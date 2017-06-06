@@ -14,7 +14,7 @@ if(question1 === 'FALSE') {
   score = score + 1;
 } else {
   alert('WRONG!!!');
-  console.log('Question ' + consoleQuestionNumber + '  Wrong');
+  console.log('Question ' + consoleQuestionNumber + '  Wrong. Nickname');
 }
 confirm('Chuck is a nickname his parents decided to call him for fun! And it stuck... Chuck\'s real name is Christopher. Your score is ' + score + '.');
 console.log('Total score is: ' + score);
@@ -31,7 +31,7 @@ if(question2 === 'TRUE') {
   score = score + 1;
 } else {
   alert('Nope!');
-  console.log('Question ' + consoleQuestionNumber + ' Wrong');
+  console.log('Question ' + consoleQuestionNumber + ' Wrong. States');
 }
 confirm('While Chuck currently resides in Iowa, he has also lived in Minnesota, Pennsylvania, New York and Colorado. That\'s where he met his lovely wife Nicole. Your score is ' + score + '.');
 console.log('Total score is: ' + score);
@@ -45,8 +45,57 @@ if(question3 === 'FALSE') {
   score = score + 1;
 } else {
   alert('Negative, Ghost Rider');
-  console.log('Question ' + consoleQuestionNumber + ' Wrong');
+  console.log('Question ' + consoleQuestionNumber + ' Wrong. Printmaker');
 }
 confirm('Chuck earned an MFA from the University of Iowa in Printmaking. Printmaking is the utilization of historic and contemporary technology to reproduce images for artistic purposes. In grad school Chuck made prints featuring bacteria, among other things, which were visual metaphores for the existing world around us that goes unseen or un-noticed... Kind of like Javascript! Your score is ' + score + '.');
 console.log('Total score is: ' + score);
 consoleQuestionNumber = consoleQuestionNumber + 1;
+
+//Question 4
+var question4 = prompt ('True or False, Chuck a father?').toUpperCase();
+if(question4 === 'TRUE') {
+  alert('Right!');
+  console.log('Question ' + consoleQuestionNumber + ' Correct. Father');
+  score = score + 1;
+} else {
+  alert('Too Bad');
+  console.log('Question ' + consoleQuestionNumber + ' Wrong. Father');
+}
+confirm('Hard to believe but Chuck is the father of a 6 year old named Colin. Colin likes to get dirty and also boss Chuck around. Maybe one day he will be a great manager. Your score is ' + score + '.');
+console.log('Total score is: ' + score);
+consoleQuestionNumber = consoleQuestionNumber + 1;
+
+//Question 5
+var guessCount = 0;
+var question5 = prompt ('True or False, Chuck wants to work for you?').toUpperCase();
+if(question5 === 'TRUE') {
+  alert('You got that darn right!');
+  console.log('Question ' + consoleQuestionNumber + ' Correct. Work');
+  score = score + 1;
+} else {
+  do{
+    question5 = prompt('Try again....').toUpperCase();
+    guessCount += 1;
+  } while (question5 !== 'TRUE');
+  console.log('Question ' + consoleQuestionNumber + ' Wrong. Work');
+  console.log('Guess Count: ' + guessCount);
+}
+console.log('Guess Count2: ' + guessCount);
+alert('Ok');
+confirm('Chuck is seeking opportunities to combine his artistic tallents with practical knowledge to give users an enriching and problem free user experience. Your score is ' + score + '.');
+console.log('Total score is: ' + score);
+consoleQuestionNumber = consoleQuestionNumber + 1;
+
+//Final Message
+if(score === 5) {
+  alert('You got a perfect score, You must really know Chuck well!');
+  console.log(userName + ' is a savant!');
+} else if(score === 0){
+  alert('You did\'t get one question correct! You really should get to know me better!');
+  console.log(userName + ' is a moron');
+} else {
+  alert(score + ' out of 5. Not too bad for a beginner.');
+  console.log(userName + ' is OK');
+}
+
+confirm('Thanks for playing the game ' + userName + '.');
