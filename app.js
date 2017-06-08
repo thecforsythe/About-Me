@@ -3,11 +3,49 @@
 //Welcome
 var userName = prompt ('Before we play the About Chuck guessing game, please enter your name.');
 alert('Welcome ' + userName + '! Lets get started.' );
+var questions = ['True or False, Chuck\'s full name is Charles Forsythe?',
+'True or False, Chuck once lived in Colorado?',
+'True or False, Chuck Chuck is a painter by training?',
+'True or False, Chuck a father?',
+'Chuck like collecting tools, especially wood working tools. Can you guess how many hand planes Chuck owns?',
+'Can you guess one of Chuck\'s favorite things to eat?',
+'True or False, Chuck wants to work for you?'];
+var userAnswers = []
+var score = 0;
+var correctAnswers = ['FALSE',
+'TRUE',
+'FALSE',
+'TRUE',
+'6',
+'PIZZA',
+'SUSHI',
+'TACO',
+'TRUE'];
+
+function playGame() {
+  while (/*some condition*/) {
+    for (var i = 0; i < questions.length; i++) {
+    userAnswers[i] = getUserAnswers(i);
+    userAnswers[i] = getUpperCase(i);
+    }
+  }
+}
+
+function getUserAnswers() {
+  useranswers[i] = prompt(questions[i]);
+}
+
+function getUpperCase() {
+  userAnswers[i] = userAnswers[i].toUpperCase();
+}
+
+function checkAnswer() {
+
+}
 
 //Question 1
-var score = 0;
-var consoleQuestionNumber = 1;
-var question1 = prompt ('True or False, Chuck\'s full name is Charles Forsythe?').toUpperCase();
+
+/*var question1 = prompt ('True or False, Chuck\'s full name is Charles Forsythe?').toUpperCase();
 if(question1 === 'FALSE') {
   alert('Way to go ' + userName + ', that is correct!');
   console.log('Question ' + consoleQuestionNumber + ' Correct. Nickname');
@@ -169,3 +207,4 @@ if(score === 5) {
   console.log(userName + ' is OK');
 }
 confirm('Thanks for playing the game ' + userName + '.');
+*/
