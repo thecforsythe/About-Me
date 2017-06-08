@@ -68,8 +68,7 @@ consoleQuestionNumber = consoleQuestionNumber + 1;
 //Question 5 Having a Parsing error in question 5
 
 
-var Question5 = prompt('guess a number');
-console.log(Question5);
+var Question5 = prompt('Chuck like collecting tools, especially wood working tools. Can you guess how many hand planes Chuck owns?');
 var realNumber = parseInt(Question5);
 console.log(realNumber);
 var q5GuessCount = 0;
@@ -86,44 +85,44 @@ if(realNumber === 6) {
       guessCount += 1;
       console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
     }
+  }
 } else if {
       if(realNumber > 6) {
         Question5 = prompt('too high try again');
         guessCount += 1;
-        console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
-      } else if {
-      if(realNumber === 6)
+        console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber); }
+} else if {
+      if(realNumber === 6) {
       alert('Right!')
       score += 1;
       guessCount += 1;
       console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
-    } else {
+      }
+} else {
       if(isNaN) {
-          prompt('Enter a number only, please.')
-          guessCount += 1;
-          console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
-        } */
+      prompt('Enter a number only, please.')
+      guessCount += 1;
+      console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
+        }
+      } */
 
 //Question 6
 
-// I'm trying to search through the array
 var question6Answers = ['pizza','sushi','tacos'];
-var question6 = prompt('Can you guess one of Chuck\'s favorite things to eat?').toLowerCase();
 var arrayTotal = question6Answers.length;
-//console.log(question6Answers.length);
-var answerLoop = for(var i = 0; i < arrayTotal; i++){
-  console.log(i);
-}
-if(question6 == question6Answers[answerLoop]) {
-  alert('Right, I love ' + question6 + '.');
-} else if {
-for(var i = 0; i < 6; i++) {
-    Question6 = prompt('Try again.');
-} else if {
-if(isNaN) {
-break
-}
-
+console.log('Array Length: ' + arrayTotal);
+// Prompt
+var question6 = prompt('Can you guess one of Chuck\'s favorite things to eat?').toLowerCase();
+//Response
+for(var i = 0; i < arrayTotal; i++){
+  if(question6 === question6Answers[i]) {
+    alert('Right, I love ' + question6Answers[i] + '.');
+    break;
+    console.log(i);
+  } else {
+//  for(var i = 0; i < 6; i++){
+    prompt('Guess Again');
+//Why is it looping 4 times!!!
 
 //Question 7
 var guessCount = 0;
