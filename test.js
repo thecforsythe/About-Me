@@ -1,10 +1,45 @@
 var question6Answers = ['pizza','sushi','tacos'];
-var question6 = prompt('Can you guess one of Chuck\'s favorite things to eat?').toLowerCase();
 var arrayTotal = question6Answers.length;
-//console.log(question6Answers.length);
-var answerLoop = for(var i = 0; i < arrayTotal; i++){
-  console.log(i);
+console.log('Array Length: ' + arrayTotal);
+// Prompt
+var question6 = prompt('Can you guess one of Chuck\'s favorite things to eat?').toLowerCase();
+//Response
+for(var i = 0; i < arrayTotal; i++){
+  if(question6 === question6Answers[i]) {
+    alert('Right, I love ' + question6Answers[i] + '.');
+    break;
+    console.log(i);
+  } else {
+//  for(var i = 0; i < 6; i++){
+    prompt('Guess Again');
+  }
+
+
+
+      //for(var i = 0; i < arrayTotal; i++){
+      //  i} ] );
+//  console.log(question6Answers[i]);
+
+
+/*  if(question6 === question6Answers[i]) {
+    alert('Right, I love ' + question6 + '. I also love ' question6Answers[
+      for(var i = 0; i < arrayTotal; i++){
+        {i} ] );
+    console.log(i);*/
+
+
+    /* it would be cool if I could do something like
+    alert('Right, I love ' + question6 + '. I also love ' question6Answers - QUESTION6
+  )*/
+
+/*
+*/
+//  console.log(question6Answers[i]);
 }
+
+
+
+
 /*
 if(question6 == question6Answers[answerLoop]) {
   alert('Right, I love ' + question6 + '.');
