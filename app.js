@@ -3,11 +3,49 @@
 //Welcome
 var userName = prompt ('Before we play the About Chuck guessing game, please enter your name.');
 alert('Welcome ' + userName + '! Lets get started.' );
+var questions = ['True or False, Chuck\'s full name is Charles Forsythe?',
+'True or False, Chuck once lived in Colorado?',
+'True or False, Chuck Chuck is a painter by training?',
+'True or False, Chuck a father?',
+'Chuck like collecting tools, especially wood working tools. Can you guess how many hand planes Chuck owns?',
+'Can you guess one of Chuck\'s favorite things to eat?',
+'True or False, Chuck wants to work for you?'];
+var userAnswers = []
+var score = 0;
+var correctAnswers = ['FALSE',
+'TRUE',
+'FALSE',
+'TRUE',
+'6',
+'PIZZA',
+'SUSHI',
+'TACO',
+'TRUE'];
+
+function playGame() {
+  while (/*some condition*/) {
+    for (var i = 0; i < questions.length; i++) {
+    userAnswers[i] = getUserAnswers(i);
+    userAnswers[i] = getUpperCase(i);
+    }
+  }
+}
+
+function getUserAnswers() {
+  useranswers[i] = prompt(questions[i]);
+}
+
+function getUpperCase() {
+  userAnswers[i] = userAnswers[i].toUpperCase();
+}
+
+function checkAnswer() {
+
+}
 
 //Question 1
-var score = 0;
-var consoleQuestionNumber = 1;
-var question1 = prompt ('True or False, Chuck\'s full name is Charles Forsythe?').toUpperCase();
+
+/*var question1 = prompt ('True or False, Chuck\'s full name is Charles Forsythe?').toUpperCase();
 if(question1 === 'FALSE') {
   alert('Way to go ' + userName + ', that is correct!');
   console.log('Question ' + consoleQuestionNumber + ' Correct. Nickname');
@@ -78,7 +116,7 @@ if(realNumber === 6) {
   score += 1;
   guessCount += 1;
   console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
-} else { //deleted else if
+} else if (realNumber !== 6){ //deleted else if
   for(var i = 0; i < 3; i++) {
     if(realNumber < 6) {
       Question5 = prompt('too low try again');
@@ -86,25 +124,23 @@ if(realNumber === 6) {
       console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
     }
   }
-} else if {
-      if(realNumber > 6) {
+} else if (realNumber > 6) {
         Question5 = prompt('too high try again');
         guessCount += 1;
-        console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber); }
-} else if {
-      if(realNumber === 6) {
+        console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
+} else if (realNumber === 6) {
       alert('Right!')
       score += 1;
       guessCount += 1;
       console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
-      }
+
 } else {
       if(isNaN) {
       prompt('Enter a number only, please.')
       guessCount += 1;
       console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
         }
-      } */
+      }
 
 //Question 6
 
@@ -114,16 +150,19 @@ console.log('Array Length: ' + arrayTotal);
 // Prompt
 var question6 = prompt('Can you guess one of Chuck\'s favorite things to eat?').toLowerCase();
 //Response
-for(var i = 0; i < arrayTotal; i++){
-  if(question6 === question6Answers[i]) {
-    alert('Right, I love ' + question6Answers[i] + '.');
-    break;
-    console.log(i);
-  } else {
-//  for(var i = 0; i < 6; i++){
-    prompt('Guess Again');
-//Why is it looping 4 times!!!
-
+for(var i = 0; i < 6; i++) {
+  for(var j = 0; j < arrayTotal; j++) {
+   if(question6 === question6Answers[i]) {
+      alert('Right, I love ' + question6Answers[i] +   '.');
+      break;
+    } else {
+  //  for(var i = 0; i < 6; i++){
+      prompt('Guess Again');
+  //Why is it looping 4 times!!!
+    }
+  }
+   console.log(i);
+}
 //Question 7
 var guessCount = 0;
 //Guess count idea fount at: https://stackoverflow.com/questions/12691691/count-the-number-of-times-an-input-has-been-made-javascript
@@ -168,3 +207,4 @@ if(score === 5) {
   console.log(userName + ' is OK');
 }
 confirm('Thanks for playing the game ' + userName + '.');
+*/
