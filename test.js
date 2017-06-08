@@ -1,3 +1,22 @@
+var question6Answers = ['pizza','sushi','tacos'];
+var question6 = prompt('Can you guess one of Chuck\'s favorite things to eat?').toLowerCase();
+var arrayTotal = question6Answers.length;
+//console.log(question6Answers.length);
+var answerLoop = for(var i = 0; i < arrayTotal; i++){
+  console.log(i);
+}
+/*
+if(question6 == question6Answers[answerLoop]) {
+  alert('Right, I love ' + question6 + '.');
+} else if {
+for(var i = 0; i < 6; i++) {
+    Question6 = prompt('Try again.');
+} else if {
+if(isNaN) {
+break
+}
+}
+}*/
 //Question 4
 
 /*
@@ -33,21 +52,34 @@ if(question5 === '6') {
   for(var loopAnswer = 0; loopAnswer < 4; 1++) {
     console.log(Question5)
   };
-} */
-var tuna = prompt('guess a number');
-console.log(tuna);
-var realNumber = parseInt(tuna);
+} *//*
+var Question5 = prompt('guess a number');
+console.log(Question5);
+var realNumber = parseInt(Question5);
 console.log(realNumber);
-
+/*
 if(realNumber === 6) {
   alert('good job');
-} else {
+} else*/ /*if {
   for(var i = 0; i < 3; i++) {
-    if(tuna >= '6') {
-      tuna = prompt('too low try again');
+    if(realNumber < 6) {
+      Question5 = prompt('too low try again');
     }
   }
-}
+}*/
+ /*else if {
+  if(realNumber > 6) {
+        Question5 = prompt('too high try again');
+      }
+    } /*else if {
+      if(realNumber === 6) {
+      alert('Right!')
+        console.log(nope);
+      } else {
+        if(isNaN) {
+          prompt(Enter a number only, please.)
+        }
+      }
   /*  } else if {
       if(tuna  '6') {
         tuna = prompt('too low try again');

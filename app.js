@@ -1,7 +1,7 @@
 'use strict'; //program will read this string and read the file accordingly
 
 //Welcome
-var userName = prompt ('Before we play 5 Facts about Chuck, please enter your name.');
+var userName = prompt ('Before we play the About Chuck guessing game, please enter your name.');
 alert('Welcome ' + userName + '! Lets get started.' );
 
 //Question 1
@@ -11,7 +11,7 @@ var question1 = prompt ('True or False, Chuck\'s full name is Charles Forsythe?'
 if(question1 === 'FALSE') {
   alert('Way to go ' + userName + ', that is correct!');
   console.log('Question ' + consoleQuestionNumber + ' Correct. Nickname');
-  score = score + 1;
+  score += 1;
 } else {
   alert('WRONG!!!');
   console.log('Question ' + consoleQuestionNumber + '  Wrong. Nickname');
@@ -28,7 +28,7 @@ var question2 = prompt ('True or False, Chuck once lived in Colorado?').toUpperC
 if(question2 === 'TRUE') {
   alert('You got it!');
   console.log('Question ' + consoleQuestionNumber + ' Correct. States');
-  score = score + 1;
+  score += 1;
 } else {
   alert('Nope!');
   console.log('Question ' + consoleQuestionNumber + ' Wrong. States');
@@ -42,7 +42,7 @@ var question3 = prompt ('True or False, Chuck Chuck is a painter by training?').
 if(question3 === 'FALSE') {
   alert('Bingo!');
   console.log('Question ' + consoleQuestionNumber + ' Correct. Printmaker');
-  score = score + 1;
+  score += 1;
 } else {
   alert('Negative, Ghost Rider');
   console.log('Question ' + consoleQuestionNumber + ' Wrong. Printmaker');
@@ -56,7 +56,7 @@ var question4 = prompt ('True or False, Chuck a father?').toUpperCase();
 if(question4 === 'TRUE') {
   alert('Right!');
   console.log('Question ' + consoleQuestionNumber + ' Correct. Father');
-  score = score + 1;
+  score += 1;
 } else {
   alert('Too Bad');
   console.log('Question ' + consoleQuestionNumber + ' Wrong. Father');
@@ -65,7 +65,67 @@ confirm('Hard to believe but Chuck is the father of a 6 year old named Colin. Co
 console.log('Total score is: ' + score);
 consoleQuestionNumber = consoleQuestionNumber + 1;
 
-//Question 5
+//Question 5 Having a Parsing error in question 5
+
+
+var Question5 = prompt('guess a number');
+console.log(Question5);
+var realNumber = parseInt(Question5);
+console.log(realNumber);
+var q5GuessCount = 0;
+
+if(realNumber === 6) {
+  alert('good job');
+  score += 1;
+  guessCount += 1;
+  console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
+} else { //deleted else if
+  for(var i = 0; i < 3; i++) {
+    if(realNumber < 6) {
+      Question5 = prompt('too low try again');
+      guessCount += 1;
+      console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
+    }
+} else if {
+      if(realNumber > 6) {
+        Question5 = prompt('too high try again');
+        guessCount += 1;
+        console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
+      } else if {
+      if(realNumber === 6)
+      alert('Right!')
+      score += 1;
+      guessCount += 1;
+      console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
+    } else {
+      if(isNaN) {
+          prompt('Enter a number only, please.')
+          guessCount += 1;
+          console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
+        } */
+
+//Question 6
+
+// I'm trying to search through the array
+var question6Answers = ['pizza','sushi','tacos'];
+var question6 = prompt('Can you guess one of Chuck\'s favorite things to eat?').toLowerCase();
+var arrayTotal = question6Answers.length;
+//console.log(question6Answers.length);
+var answerLoop = for(var i = 0; i < arrayTotal; i++){
+  console.log(i);
+}
+if(question6 == question6Answers[answerLoop]) {
+  alert('Right, I love ' + question6 + '.');
+} else if {
+for(var i = 0; i < 6; i++) {
+    Question6 = prompt('Try again.');
+} else if {
+if(isNaN) {
+break
+}
+
+
+//Question 7
 var guessCount = 0;
 //Guess count idea fount at: https://stackoverflow.com/questions/12691691/count-the-number-of-times-an-input-has-been-made-javascript
 
@@ -90,6 +150,12 @@ if(guessCount > 1) {
 confirm('Chuck is seeking opportunities to combine his artistic talents with practical knowledge to give users an enriching and problem free user experience. Your score is ' + score + '.');
 console.log('Total score is: ' + score);
 consoleQuestionNumber = consoleQuestionNumber + 1;
+
+
+
+
+
+
 
 //Final Message
 if(score === 5) {
