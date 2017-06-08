@@ -78,7 +78,7 @@ if(realNumber === 6) {
   score += 1;
   guessCount += 1;
   console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
-} else { //deleted else if
+} else if (realNumber !== 6){ //deleted else if
   for(var i = 0; i < 3; i++) {
     if(realNumber < 6) {
       Question5 = prompt('too low try again');
@@ -86,25 +86,23 @@ if(realNumber === 6) {
       console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
     }
   }
-} else if {
-      if(realNumber > 6) {
+} else if (realNumber > 6) {
         Question5 = prompt('too high try again');
         guessCount += 1;
-        console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber); }
-} else if {
-      if(realNumber === 6) {
+        console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
+} else if (realNumber === 6) {
       alert('Right!')
       score += 1;
       guessCount += 1;
       console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
-      }
+
 } else {
       if(isNaN) {
       prompt('Enter a number only, please.')
       guessCount += 1;
       console.log('q5GuessCount: ' + q5GuessCount + ' Input Number: ' + realNumber);
         }
-      } */
+      }
 
 //Question 6
 
@@ -114,16 +112,19 @@ console.log('Array Length: ' + arrayTotal);
 // Prompt
 var question6 = prompt('Can you guess one of Chuck\'s favorite things to eat?').toLowerCase();
 //Response
-for(var i = 0; i < arrayTotal; i++){
-  if(question6 === question6Answers[i]) {
-    alert('Right, I love ' + question6Answers[i] + '.');
-    break;
-    console.log(i);
-  } else {
-//  for(var i = 0; i < 6; i++){
-    prompt('Guess Again');
-//Why is it looping 4 times!!!
-
+for(var i = 0; i < 6; i++) {
+  for(var j = 0; j < arrayTotal; j++) {
+   if(question6 === question6Answers[i]) {
+      alert('Right, I love ' + question6Answers[i] +   '.');
+      break;
+    } else {
+  //  for(var i = 0; i < 6; i++){
+      prompt('Guess Again');
+  //Why is it looping 4 times!!!
+    }
+  }
+   console.log(i);
+}
 //Question 7
 var guessCount = 0;
 //Guess count idea fount at: https://stackoverflow.com/questions/12691691/count-the-number-of-times-an-input-has-been-made-javascript
