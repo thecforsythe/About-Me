@@ -4,6 +4,90 @@
 var userName = prompt ('Before we play the About Chuck guessing game, please enter your name.');
 alert('Welcome ' + userName + '! Lets get started.' );
 
+//Function 0 - a generic Function
+
+//Array of user prompts
+var userPrompts = ['True or False, Chuck\'s full name is Charles Forsythe?',
+'True or False, Chuck once lived in Colorado?',
+'True or False, Chuck Chuck is a painter by training?',
+'True or False, Chuck a father?',
+'True or False, Chuck wants to work for you?'];
+
+ //Array of correct answers
+ var correctAnswers = ['FALSE',
+ 'TRUE',
+ 'FALSE',
+ 'TRUE',
+ 'TRUE'];
+
+//Array of user alerts when anser is correct
+var correctAlerts = ['Way to go ' + userName + ', that is correct!','You got it!', 'Bingo!', 'Right!', 'You got that darn right!'];
+
+//Array of user alerts when anser is wrong
+var incorrectAlerts = ['WRONG!!!','Nope!','Negative, Ghost Rider', 'Too Bad', 'False']
+
+//Array of confirm statments after answer is stated
+var followUpConfirm = [/*1*/ 'Chuck is a nickname his parents decided to call him for fun! And it stuck... Chuck\'s real name is Christopher. Your score is ' + score + '.',
+/*2*/
+ 'While Chuck currently resides in Iowa, he has also lived in Minnesota, Pennsylvania, New York and Colorado. That\'s where he met his lovely wife Nicole. Your score is ' + score + '.',
+ /*3*/ 'Chuck earned an MFA from the University of Iowa in Printmaking. Printmaking is the utilization of historic and contemporary technology to reproduce images for artistic purposes. In grad school Chuck made prints featuring bacteria, among other things, which were visual metaphores for the existing world around us that goes unseen or un-noticed... Kind of like Javascript! Your score is ' + score + '.',
+ /*4*/
+ 'Hard to believe but Chuck is the father of a 6 year old named Colin. Colin likes to get dirty and also boss Chuck around. Maybe one day he will be a great manager. Your score is ' + score + '.',
+ /*4*/ 'Chuck is seeking opportunities to combine his artistic talents with practical knowledge to give users an enriching and problem free user experience. Your score is ' + score + '.'] ;
+ +
+ var score = 0;
+ +function playGame() {
+ +  while (/*some condition*/) {
+ +    for (var i = 0; i < questions.length; i++) {
+ +    userAnswers[i] = getUserAnswers(i);
+ +    userAnswers[i] = getUpperCase(i);
+ +    }
+ +  }
+ +}
+
+
+function userPrompts = (var question(i) = prompt (userPrompts[i]).toUpperCase()){
+
+function ifStatement = (if(question(i) === correctAnswers[i]) {
+   correctAlerts(i)
+ console.log('Question ' + consoleQuestionNumber + ' Correct.');
+ score += 1;
+ }
+
+function elseStatement = (else {
+   incorrectAlerts(i)
+   console.log('Question ' + consoleQuestionNumber + '  Wrong.')
+ }
+
+function followConfirm = (confirm(followUpConfirm(i))
+console.log('Total score is: ' + score);
+
+
+ +
+ +function getUpperCase() {
+ +  userAnswers[i] = userAnswers[i].toUpperCase();
+ +}
+ +
+ +function checkAnswer() {
+ +
+ +}
+
+
+  ///////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Question 1
 var score = 0;
 var consoleQuestionNumber = 1;
