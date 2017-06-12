@@ -9,6 +9,11 @@
   min-width: 900px
 }
 
+.headclick {
+  font-family: 'Space Mono', monospace;
+  color: darkorange;
+}
+
 h1 {
   font-size: 300%
 }
@@ -18,7 +23,7 @@ header{
 
 .header {
   position: absolute;
-  top: 50px;
+  top: 0px;
   right: 8%;
   width: 100%;
   text-align: right;
@@ -31,6 +36,7 @@ nav {
   height: 50px;
   text-align:center;
 
+
 }
 nav li{
     display:inline;
@@ -38,6 +44,7 @@ nav li{
     margin:15px;
     font-family:'Passion+One',sans-serif;
     vertical-align: middle;
+    font-size: 20px
 
 
 }
