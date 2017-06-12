@@ -1,21 +1,77 @@
-body {
-  background:grey;
-  font-family: Helvetica,sans-serif;
-  font-size: 14px;
+/* {
+  border: 2px solid red;
 
+}*/
+
+.pichead {
+  position: relative;
+  width: 100%;
+  min-width: 900px
+}
+
+.headclick {
+  font-family: 'Space Mono', monospace;
+  color: darkorange;
+}
+
+h1 {
+  font-size: 300%
+}
+header{
+    background:grey;
+}
+
+.header {
+  position: absolute;
+  top: 0px;
+  right: 8%;
+  width: 100%;
+  text-align: right;
+  font-family: 'Space Mono', monospace;
+  color: darkorange;
+}
+
+nav {
+  background-color: darkorange;
+  height: 50px;
+  text-align:center;
+
+
+}
+nav li{
+    display:inline;
+    width: 100%;
+    margin:15px;
+    font-family:'Passion+One',sans-serif;
+    vertical-align: middle;
+    font-size: 20px
+
+
+}
+span {
+  font-size: 8em;
+  font-family:'Passion+One',sans-serif;
+  vertical-align: bottom;
+  float: left;
+  position: relative;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background:grey;
 }
 p {
   padding-left: 20px;
 }
-h1 {
-  color: darkred;
+
 }
 h3 {
   color: darkred;
 }
 a {
   text-decoration: none;
-  color: darkred;
+  color: black;
   font-weight: bold;
 }
 a:hover {
